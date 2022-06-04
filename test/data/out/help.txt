@@ -1,0 +1,16 @@
+Usage: png-zip.py [options] png_file [zip_dir]
+           where png_file can be unzipped (-u) or zipped (-z) to zip_dir
+
+Options:
+  -h, --help            show this help message and exit
+  -v, --verbose         verbose output
+  -l, --list            list the chunks
+  -c, --cont            consider the contents of chunks
+  -n, --none            assume filter type none for PPM
+  -t, --trunc           truncate the output to the TTY
+  -r, --raw             show contents in a raw hex dump
+  -p, --ppm             convert png_file to a PPM in the cwd (implies -c)
+  -f FOFF, --filter-offset=FOFF
+                        add some offset to the filter type
+  -u, --unzip           unzip png_file to zip_dir
+  -z, --zip             zip zip_dir to png_file

@@ -1,0 +1,5 @@
+Offset Length Type      CRC Contents
+     8     13 IHDR b1c6d285 100x75 bdepth=8 ctype=3 comp=0 filter=0 inter=0
+    33     93 PLTE d9a18af7 33,33,33 66,66,33 99,cc,66 66,99,33 66,66,66 99,99
+   138   2360 IDAT e34e4646 58 c3 8d 58 8b 76 e2 b8 12 54 5b 92 6d c9 13 43 
+  2510      0 IEND ae426082 

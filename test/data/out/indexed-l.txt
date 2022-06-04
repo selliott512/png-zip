@@ -1,0 +1,5 @@
+Offset Length Type      CRC
+     8     13 IHDR b1c6d285 
+    33     93 PLTE d9a18af7 
+   138   2360 IDAT e34e4646 
+  2510      0 IEND ae426082 

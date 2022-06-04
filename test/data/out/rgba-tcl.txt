@@ -1,0 +1,6 @@
+Offset Length Type      CRC Contents
+     8     13 IHDR 861822b7 100x75 bdepth=8 ctype=6 comp=0 filter=0 inter=0
+    33   8192 IDAT 91f02c32 78 da ac bb 57 ac 6e 69 7a e7 f5 7b 57 8e 5f de 
+  8237   8192 IDAT e4d31ea8 7a c3 31 81 bf 22 8a 62 f6 d6 3a 9c 73 1a 4c 7c 
+ 16441   3149 IDAT 362f4e35 1e 63 35 4a 9a 45 13 50 54 8c f3 11 6b 0c e0 88 
+ 19602      0 IEND ae426082 
