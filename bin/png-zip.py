@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# png-zip version 1.2
+# png-zip version 1.3
 #   by Steven Elliott <selliott512@gmail.com>
 #
 # This program lists the sections of a PNG file, zips and unzips PNGs to a
