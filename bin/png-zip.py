@@ -358,7 +358,7 @@ def read_png():
             if opts.raw and chunk_type != "IHDR":
                 # Just do a hex dump of all chunks.  But it is still
                 # necessary to parse the header.
-                chunk_cont = png_hand.read(min(chunk_length, cont_cols / 3))
+                chunk_cont = png_hand.read(min(chunk_length, cont_cols // 3))
                 chunk_cont_str = str_to_base16(chunk_cont)
             else:
                 # See if it is a "simple" chunk, meaning that we just want to
@@ -403,7 +403,7 @@ filter=%d inter=%d" % (png_width, png_height, png_bdepth, png_ctype,
                 # for both PNG and PPM.
                 bpp = channels * (png_bdepth >> 3) # Bytes per pixel
             elif chunk_type in ("bKGD", "tRNS"):
-                chunk_cont = png_hand.read(min(chunk_length, cont_cols / 3))
+                chunk_cont = png_hand.read(min(chunk_length, cont_cols // 3))
                 if png_ctype == 3:          # Indexed color
                     chunk_cont_str = str_to_base16(chunk_cont)
                 elif png_ctype in (0, 4):  # Greyscale
@@ -413,7 +413,7 @@ filter=%d inter=%d" % (png_width, png_height, png_bdepth, png_ctype,
                                                                chunk_cont)
             elif chunk_type == "tEXt":
                 chunk_cont_str = png_hand.read(min(chunk_length,
-                                                   cont_cols)).rstrip()
+                                     cont_cols)).decode("utf-8").rstrip()
                 chunk_cont_str = chunk_cont_str.replace("\x00", "|")
             else:
                 # Do a raw hex dump of all unknown chunks.
